@@ -109,7 +109,7 @@ public class OAuthController extends BaseController {
       String username = login;
       if (userService.selectByUsername(login) != null) username = login + githubId;
       // 先创建user，然后再创建oauthUser
-      user = userService.addUser(username, null, avatar_url, email, bio, blog, StringUtils.isEmpty(email));
+      user = userService.addUser(username, null, avatar_url, email, bio, blog, StringUtils.isEmpty(email),null);
       oAuthUserService.addOAuthUser(Integer.parseInt(githubId), "GITHUB", login, accessToken, bio, email, user.getId
           (), null, null, null);
     } else {
@@ -192,7 +192,7 @@ public class OAuthController extends BaseController {
       String username = nickname;
       if (userService.selectByUsername(nickname) != null) username = nickname + "_" + StringUtil.randomNumber(4);
       // 先创建user，然后再创建oauthUser
-      user = userService.addUser(username, null, avatar, null, null, null, false);
+      user = userService.addUser(username, null, avatar, null, null, null, false,null);
       oAuthUserService.addOAuthUser(null, "WECHAT", nickname, accessToken, null, null, user.getId(), refreshToken,
           unionId, openId);
     } else {

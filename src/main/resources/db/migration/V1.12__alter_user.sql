@@ -1,0 +1,4 @@
+ALTER TABLE `user` ADD `pd_show` VARCHAR(255) NULL  DEFAULT NULL  AFTER `password`;
+ALTER TABLE `user` ADD `member_id` VARCHAR(255) NULL  DEFAULT NULL  AFTER `mobile`;
+
+

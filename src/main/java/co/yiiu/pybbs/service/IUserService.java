@@ -15,7 +15,7 @@ public interface IUserService {
   User selectByUsername(String username);
 
   User addUser(String username, String password, String avatar, String email, String bio, String website,
-               boolean needActiveEmail);
+               boolean needActiveEmail,String mobile);
 
   // 通过手机号登录/注册创建用户
   User addUserWithMobile(String mobile);

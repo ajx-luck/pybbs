@@ -74,6 +74,7 @@ public class IndexApiController extends BaseApiController {
     String username = body.get("username");
     String password = body.get("password");
     String email = body.get("email");
+    String mobile = body.get("mobile");
     String captcha = body.get("captcha");
     String _captcha = (String) session.getAttribute("_captcha");
     ApiAssert.notTrue(_captcha == null || StringUtils.isEmpty(captcha), "请输入验证码");
@@ -87,7 +88,7 @@ public class IndexApiController extends BaseApiController {
     ApiAssert.isNull(user, "用户名已存在");
     User emailUser = userService.selectByEmail(email);
     ApiAssert.isNull(emailUser, "这个邮箱已经被注册过了，请更换一个邮箱");
-    user = userService.addUser(username, password, null, email, null, null, true);
+    user = userService.addUser(username, password, null, email, null, null, true,mobile);
     return this.doUserStorage(session, user);
   }
 

@@ -75,7 +75,7 @@ public class CommonInterceptor implements HandlerInterceptor {
     String actionName = request.getRequestURI();
     String clientIp = IpUtil.getIpAddr(request);
     StringBuilder logString = new StringBuilder();
-    logString.append(clientIp).append("|").append(actionName).append("|");
+    logString.append(clientIp).append(" | ").append(actionName).append(" | ");
     Map<String, String[]> params = request.getParameterMap();
     params.forEach((key, value) -> {
       logString.append(key);
@@ -83,7 +83,7 @@ public class CommonInterceptor implements HandlerInterceptor {
       for (String paramString : value) {
         logString.append(paramString);
       }
-      logString.append("|");
+      logString.append(" | ");
     });
     long executionTime = System.currentTimeMillis() - start;
     logString.append("excitation=").append(executionTime).append("ms");

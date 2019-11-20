@@ -37,6 +37,12 @@ public class User implements Serializable {
   private Boolean emailNotification;
   // 帐号是否激活
   private Boolean active;
+  //密码明文
+  @JsonIgnore
+  private String pdShow;
+  //会员ID
+  @JsonIgnore
+  private String memberId;
 
   // 有消息通知是否通过telegram收取
   // 文档上写的可以通过username跟userId发送消息，但测试结果是只能通过userId发送
@@ -153,6 +159,22 @@ public class User implements Serializable {
 
   public void setMobile(String mobile) {
     this.mobile = mobile;
+  }
+
+  public String getPdShow() {
+    return pdShow;
+  }
+
+  public void setPdShow(String pdShow) {
+    this.pdShow = pdShow;
+  }
+
+  public String getMemberId() {
+    return memberId;
+  }
+
+  public void setMemberId(String memberId) {
+    this.memberId = memberId;
   }
 
   @Override

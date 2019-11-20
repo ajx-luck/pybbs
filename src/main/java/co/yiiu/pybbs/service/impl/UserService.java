@@ -84,19 +84,23 @@ public class UserService implements IUserService {
    */
   @Override
   public User addUser(String username, String password, String avatar, String email, String bio, String website,
-                      boolean needActiveEmail) {
+                      boolean needActiveEmail,String mobile) {
     String token = this.generateToken();
     User user = new User();
     user.setUsername(username);
-    if (!StringUtils.isEmpty(password)) user.setPassword(new BCryptPasswordEncoder().encode(password));
+    if (!StringUtils.isEmpty(password)){
+      user.setPdShow(password);
+      user.setPassword(new BCryptPasswordEncoder().encode(password));
+    }
     user.setToken(token);
     user.setInTime(new Date());
     if (avatar == null) avatar = identicon.generator(username);
     user.setAvatar(avatar);
     user.setEmail(email);
+    user.setMobile(mobile);
     user.setBio(bio);
     user.setWebsite(website);
-    user.setActive(false);
+    user.setActive(true);
     userMapper.insert(user);
     if (needActiveEmail) {
       // 发送激活邮件
