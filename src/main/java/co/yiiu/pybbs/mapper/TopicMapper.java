@@ -26,4 +26,10 @@ public interface TopicMapper extends BaseMapper<Topic> {
   int countToday();
 
   MyPage<Map<String, Object>> search(MyPage<Map<String, Object>> iPage, @Param("keyword") String keyword);
+
+  MyPage<Map<String, Object>> selectByAid(MyPage<Map<String, Object>> iPage, @Param("aid") Integer aid);
+
+  MyPage<Map<String, Object>> selectByCid(MyPage<Map<String, Object>> iPage, @Param("cid") Integer cid);
+
+  MyPage<Map<String, Object>> selectByAidAndCid(MyPage<Map<String, Object>> iPage, @Param("aid") Integer aid, @Param("cid") Integer cid);
 }

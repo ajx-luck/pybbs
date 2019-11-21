@@ -34,6 +34,18 @@ public class Topic implements Serializable {
   private Boolean good;
   // 点赞用户的id英文,隔开的，要计算被多少人点赞过，可以通过英文,分隔这个字符串计算数量
   private String upIds;
+  //审核失败原因
+  private String backContent;
+  //审核状态，0未审核，1审核通过，2审核失败
+  private Integer checkStatus;
+  //观看需要的分数
+  private Integer score;
+  //上级区域id
+  private Integer paid;
+  //区域id
+  private Integer aid;
+  //分类id
+  private Integer cid;
 
   public String getUpIds() {
     return upIds;
@@ -129,5 +141,53 @@ public class Topic implements Serializable {
 
   public void setGood(Boolean good) {
     this.good = good;
+  }
+
+  public Integer getCheckStatus() {
+    return checkStatus;
+  }
+
+  public void setCheckStatus(Integer checkStatus) {
+    this.checkStatus = checkStatus;
+  }
+
+  public String getBackContent() {
+    return backContent;
+  }
+
+  public void setBackContent(String backContent) {
+    this.backContent = backContent;
+  }
+
+  public Integer getScore() {
+    return score;
+  }
+
+  public void setScore(Integer score) {
+    this.score = score;
+  }
+
+  public Integer getPaid() {
+    return paid;
+  }
+
+  public void setPaid(Integer paid) {
+    this.paid = paid;
+  }
+
+  public Integer getAid() {
+    return aid;
+  }
+
+  public void setAid(Integer aid) {
+    this.aid = aid;
+  }
+
+  public Integer getCid() {
+    return cid;
+  }
+
+  public void setCid(Integer cid) {
+    this.cid = cid;
   }
 }

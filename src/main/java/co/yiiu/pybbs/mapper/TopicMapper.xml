@@ -85,4 +85,28 @@
     order by t.in_time desc
   </select>
 
+  <select id="selectByAid" resultType="map">
+    select t.*, u.username, u.avatar
+    from topic t
+           left join user u on t.user_id = u.id
+    where t.aid = #{aid}
+    order by t.in_time desc
+  </select>
+
+  <select id="selectByCid" resultType="map">
+    select t.*, u.username, u.avatar
+    from topic t
+           left join user u on t.user_id = u.id
+    where t.cid = #{cid}
+    order by t.in_time desc
+  </select>
+
+  <select id="selectByAidAndCid" resultType="map">
+    select t.*, u.username, u.avatar
+    from topic t
+           left join user u on t.user_id = u.id
+    where t.cid = #{cid} and t.aid = #{aid}
+    order by t.in_time desc
+  </select>
+
 </mapper>

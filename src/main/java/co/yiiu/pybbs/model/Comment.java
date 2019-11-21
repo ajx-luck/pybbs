@@ -24,6 +24,11 @@ public class Comment implements Serializable {
   // 点赞用户的id
   private String upIds;
 
+  //审核失败原因
+  private String backContent;
+  //审核状态，0未审核，1审核通过，2审核失败
+  private Integer checkStatus;
+
   public String getUpIds() {
     return upIds;
   }
@@ -78,5 +83,21 @@ public class Comment implements Serializable {
 
   public void setCommentId(Integer commentId) {
     this.commentId = commentId;
+  }
+
+  public String getBackContent() {
+    return backContent;
+  }
+
+  public void setBackContent(String backContent) {
+    this.backContent = backContent;
+  }
+
+  public Integer getCheckStatus() {
+    return checkStatus;
+  }
+
+  public void setCheckStatus(Integer checkStatus) {
+    this.checkStatus = checkStatus;
   }
 }
