@@ -47,6 +47,166 @@ public class Topic implements Serializable {
   //分类id
   private Integer cid;
 
+  private String provice;
+
+  private String city;
+
+  private String category;
+
+  private String address;//详细地址
+
+  private String infocome;//信息来源
+
+  private String missnumber;//数量
+
+  private String missage;//年龄
+
+  private String missquality;//质量
+
+  private String missappearance;//外貌
+
+  private String sextype;//服务类型
+
+  private String price;//价格
+
+  private String bustime;//时间
+
+  private String env;//环境
+
+  private String safety;//安全
+
+  private String contact;//联系方式
+
+  private String evaluate;//评价
+
+  public String getProvice() {
+    return provice;
+  }
+
+  public void setProvice(String provice) {
+    this.provice = provice;
+  }
+
+  public String getCity() {
+    return city;
+  }
+
+  public void setCity(String city) {
+    this.city = city;
+  }
+
+  public String getCategory() {
+    return category;
+  }
+
+  public void setCategory(String category) {
+    this.category = category;
+  }
+
+  public String getAddress() {
+    return address;
+  }
+
+  public void setAddress(String address) {
+    this.address = address;
+  }
+
+  public String getInfocome() {
+    return infocome;
+  }
+
+  public void setInfocome(String infocome) {
+    this.infocome = infocome;
+  }
+
+  public String getMissnumber() {
+    return missnumber;
+  }
+
+  public void setMissnumber(String missnumber) {
+    this.missnumber = missnumber;
+  }
+
+  public String getMissage() {
+    return missage;
+  }
+
+  public void setMissage(String missage) {
+    this.missage = missage;
+  }
+
+  public String getMissquality() {
+    return missquality;
+  }
+
+  public void setMissquality(String missquality) {
+    this.missquality = missquality;
+  }
+
+  public String getMissappearance() {
+    return missappearance;
+  }
+
+  public void setMissappearance(String missappearance) {
+    this.missappearance = missappearance;
+  }
+
+  public String getSextype() {
+    return sextype;
+  }
+
+  public void setSextype(String sextype) {
+    this.sextype = sextype;
+  }
+
+  public String getPrice() {
+    return price;
+  }
+
+  public void setPrice(String price) {
+    this.price = price;
+  }
+
+  public String getBustime() {
+    return bustime;
+  }
+
+  public void setBustime(String bustime) {
+    this.bustime = bustime;
+  }
+
+  public String getEnv() {
+    return env;
+  }
+
+  public void setEnv(String env) {
+    this.env = env;
+  }
+
+  public String getSafety() {
+    return safety;
+  }
+
+  public void setSafety(String safety) {
+    this.safety = safety;
+  }
+
+  public String getContact() {
+    return contact;
+  }
+
+  public void setContact(String contact) {
+    this.contact = contact;
+  }
+
+  public String getEvaluate() {
+    return evaluate;
+  }
+
+  public void setEvaluate(String evaluate) {
+    this.evaluate = evaluate;
+  }
+
   public String getUpIds() {
     return upIds;
   }
