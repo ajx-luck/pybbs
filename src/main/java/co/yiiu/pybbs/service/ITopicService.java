@@ -53,4 +53,6 @@ public interface ITopicService {
   int countToday();
 
   int vote(Topic topic, User user, HttpSession session);
+  //分页查询所有的
+  MyPage<Map<String, Object>> selectAllTopics(Integer pageNo);
 }

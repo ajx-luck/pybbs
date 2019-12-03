@@ -251,4 +251,12 @@ public class TopicService implements ITopicService {
     return strings.size();
   }
 
+  @Override
+  public MyPage<Map<String, Object>> selectAllTopics(Integer pageNo) {
+    MyPage<Map<String, Object>> page = new MyPage<>(pageNo, Integer.parseInt(systemConfigService.selectAllConfig()
+            .get("page_size").toString()));
+    page = topicMapper.selectAllTopics(page);
+    return page;
+  }
+
 }

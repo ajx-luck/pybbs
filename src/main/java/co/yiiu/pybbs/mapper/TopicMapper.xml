@@ -109,4 +109,11 @@
     order by t.in_time desc
   </select>
 
+  <select id="selectAllTopics" resultType="map">
+    select t.*
+    from topic t
+    where check_status = 1
+    order by t.in_time desc
+  </select>
+
 </mapper>
