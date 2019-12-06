@@ -23,6 +23,9 @@ ALTER TABLE `topic` ADD `category` VARCHAR(255)  NULL  DEFAULT NULL  AFTER `good
 ALTER TABLE `comment` ADD `check_status` INTEGER (11) NULL  DEFAULT NULL  AFTER `content`;
 ALTER TABLE `comment` ADD `back_content` VARCHAR(255) NULL  DEFAULT NULL  AFTER `content`;
 
+INSERT INTO `topic` VALUES (1, '北仑一条街，探秘高', NULL, '2019-12-06 11:19:27', '2019-12-06 11:19:27', 1, 0, 0, 1, b'0', b'0', '其她小姐', '宁波', '浙江省', '查看需扣除20小姐币【现在开通VIP后，无需小姐币，即可免费查看全站所', '查看需扣除20小姐币【现在开通VIP后，无需小姐币，即可免费查看全站所有信息】', '不去最安全', '小屋', '10点之后', '200-1000', '一条龙', '60-70', '高', '20-30', '10+', '查看需扣除20小姐币【现在开通VIP后，无需小姐币，即可免费查看全站所有信息】', '查看需扣除20小姐币【现在开通VIP后，无需小姐币，即可免费查看全站所有信息】', NULL, NULL, NULL, NULL, NULL, NULL, NULL);
+
+
 # Dump of table area
 # ------------------------------------------------------------
 

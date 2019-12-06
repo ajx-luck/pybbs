@@ -37,6 +37,12 @@ public class PayInfo implements Serializable {
 
     //支付成功时间
     private Date endTime;
+    //支付订单号
+    private String tradeNo;
+    //支付方式
+    private String payType;
+    //商户id
+    private String pid;
 
     public Integer getId() {
         return id;
@@ -101,5 +107,29 @@ public class PayInfo implements Serializable {
 
     public void setPayStatus(Integer payStatus) {
         this.payStatus = payStatus;
+    }
+
+    public String getTradeNo() {
+        return tradeNo;
+    }
+
+    public void setTradeNo(String tradeNo) {
+        this.tradeNo = tradeNo;
+    }
+
+    public String getPayType() {
+        return payType;
+    }
+
+    public void setPayType(String payType) {
+        this.payType = payType;
+    }
+
+    public String getPid() {
+        return pid;
+    }
+
+    public void setPid(String pid) {
+        this.pid = pid;
     }
 }

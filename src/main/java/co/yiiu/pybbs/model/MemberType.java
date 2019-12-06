@@ -19,7 +19,7 @@ public class MemberType implements Serializable {
     private Integer id;
     //会员名称 普通会员，季度会员，年费会员
     private String name;
-    //使用时长
+    //使用时长，单位毫秒
     private Long useTime;
     //实际金额
     private Long currentMoney;
