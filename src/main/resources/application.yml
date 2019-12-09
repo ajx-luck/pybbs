@@ -19,8 +19,8 @@ spring:
       max-request-size: -1
 
 
-  resources:
-    static-locations: ["classpath:static/", "file:./static/"]
+#  resources:
+#    static-locations: ["classpath:static/", "file:./static/"]
 
 # 配置mapper.xml位置，这个位置可以在pom.xml里配置
 mybatis-plus:

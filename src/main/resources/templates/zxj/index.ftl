@@ -40,7 +40,7 @@
 </table>
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text">
     <tr>
-        <td height="60" align="left"><img src="images/ind_09.png" width="246" height="60" alt="" /></td>
+        <td height="60" align="left"><img src="/static/images/ind_09.png" width="246" height="60" alt="" /></td>
         <td width="740">&nbsp;</td>
     </tr>
 </table>
@@ -69,7 +69,7 @@
             </div></td>
     </tr>
 </table>
-<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text" background="images/ind_19.gif">
+<table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text" background="/static/images/ind_19.gif">
     <tr>
         <td width="10" height="35"></td>
         <td width="980" align="center" class="fff"><MARQUEE scrollDelay=150 width=950 height=20 border="0" onmouseover=this.stop() onmouseout=this.start()>
@@ -94,17 +94,17 @@
 <form style="margin:0px;" method="get" action="ShowSearch.asp" onSubmit="if(this.key.value==''||this.key.value=='请输入搜索的关键词！'){alert('请输入关键词!');return false;}">
     <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text">
         <tr>
-            <td width="45" height="10" align="left"><img src="images/ind_28.gif" width="45" height="35" alt="" /></td>
-            <td width="85" align="center" background="images/ind_29.gif">
+            <td width="45" height="10" align="left"><img src="/static/images/ind_28.gif" width="45" height="35" alt="" /></td>
+            <td width="85" align="center" background="/static/images/ind_29.gif">
                 <select name="cat" id="v4_search_select">
                     <option value="title" selected="true">标题</option>
                     <option value="xiangmu">服务项目</option>
                     <option value="content">详细内容</option>
                 </select></td>
-            <td width="226" align="center" background="images/ind_29.gif"><input name="key" type="text" id="key" value="请输入搜索的关键词！" size="30" maxlength="15" onClick="if(this.value=='请输入搜索的关键词！'){this.value='';}" /></td>
-            <td width="65" align="center" background="images/ind_29.gif"><input type="image" name="imageField" id="imageField" src="images/ind_34.gif" /></td>
-            <td width="569" align="center" background="images/ind_29.gif" class="ec3f39">请大家多多关注本站活动&rdquo;山寨站点泛滥&ldquo;提防被骗！</td>
-            <td width="10" align="left"><img src="images/ind_32.gif" width="10" height="35" alt="" /></td>
+            <td width="226" align="center" background="/static/images/ind_29.gif"><input name="key" type="text" id="key" value="请输入搜索的关键词！" size="30" maxlength="15" onClick="if(this.value=='请输入搜索的关键词！'){this.value='';}" /></td>
+            <td width="65" align="center" background="/static/images/ind_29.gif"><input type="image" name="imageField" id="imageField" src="/static/images/ind_34.gif" /></td>
+            <td width="569" align="center" background="/static/images/ind_29.gif" class="ec3f39">请大家多多关注本站活动&rdquo;山寨站点泛滥&ldquo;提防被骗！</td>
+            <td width="10" align="left"><img src="/static/images/ind_32.gif" width="10" height="35" alt="" /></td>
         </tr>
     </table>
 </form>
@@ -115,7 +115,7 @@
 </table>
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text">
     <tr>
-        <td height="27" align="left" background="images/ind_42.gif">
+        <td height="27" align="left" background="/static/images/ind_42.gif">
             <table width="1000" border="0" cellpadding="0" cellspacing="0" class="text">
                 <tr>
                     <td width="129" align="center" class="fff14">热门城市入口</td>
@@ -134,11 +134,11 @@
 </table>
 <table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text">
     <tr>
-        <td width="1000" height="93" background="images/ind_46.gif"><table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
+        <td width="1000" height="93" background="/static/images/ind_46.gif"><table width="980" border="0" align="center" cellpadding="0" cellspacing="0">
                 <tr>
-                    <td width="40" align="left"><img src="images/ind_51.gif" width="31" height="82" alt="" /></td>
+                    <td width="40" align="left"><img src="/static/images/ind_51.gif" width="31" height="82" alt="" /></td>
                     <td width="180" align="left">
-                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="images/line.gif" class="text_26">
+                        <table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="/static/images/line.gif" class="text_26">
                             <tr>
                                 <td align="left">
                                     <span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=1">北京</a> <a href="ShowClass.asp?typeid=&areaid=4">天津</a> <a href="ShowClass.asp?typeid=&areaid=5">山东</a> <a href="ShowClass.asp?typeid=&areaid=6">河北</a><br />
@@ -147,8 +147,8 @@
                             </tr>
                         </table>
                     </td>
-                    <td width="40" align="left"><img src="images/ind_53.gif" width="31" height="82" alt="" /></td>
-                    <td width="180" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="images/line.gif" class="text_26">
+                    <td width="40" align="left"><img src="/static/images/ind_53.gif" width="31" height="82" alt="" /></td>
+                    <td width="180" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="/static/images/line.gif" class="text_26">
                             <tr>
                                 <td align="left">
                                     <span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=2">上海市</a> <a href="ShowClass.asp?typeid=&areaid=12">江苏省</a> <a href="ShowClass.asp?typeid=&areaid=13">浙江省</a><br />
@@ -156,8 +156,8 @@
                                     <span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=19">江西省</a> <a href="ShowClass.asp?typeid=&areaid=17">安徽省</a> <a href="ShowClass.asp?typeid=&areaid=18">湖南省</a></td>
                             </tr>
                         </table></td>
-                    <td width="40" align="left"><img src="images/ind_56.gif" width="31" height="82" alt="" /></td>
-                    <td width="150" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="images/line.gif" class="text_26">
+                    <td width="40" align="left"><img src="/static/images/ind_56.gif" width="31" height="82" alt="" /></td>
+                    <td width="150" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="/static/images/line.gif" class="text_26">
                             <tr>
                                 <td align="left"><span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=20">广东省</a><br />
                                     <span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=21">广西自治区</a><br />
@@ -165,16 +165,16 @@
                             </tr>
                         </table>
                     </td>
-                    <td width="40" align="left"><img src="images/ind_58.gif" width="31" height="82" alt="" /></td>
-                    <td width="180" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="images/line.gif" class="text_26">
+                    <td width="40" align="left"><img src="/static/images/ind_58.gif" width="31" height="82" alt="" /></td>
+                    <td width="180" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="/static/images/line.gif" class="text_26">
                             <tr>
                                 <td align="left"><span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=3">重庆市</a> <a href="ShowClass.asp?typeid=&areaid=22">四川省</a> <a href="ShowClass.asp?typeid=&areaid=23">云南省</a><br />
                                     <span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=24">贵州省</a> <a href="ShowClass.asp?typeid=&areaid=25">陕西省</a> <a href="ShowClass.asp?typeid=&areaid=26">甘肃省</a><br />
                                     <span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=27">新疆</a> <a href="ShowClass.asp?typeid=&areaid=28">宁夏</a> <a href="ShowClass.asp?typeid=&areaid=29">青海</a> <a href="ShowClass.asp?typeid=&areaid=30">西藏</a></td>
                             </tr>
                         </table></td>
-                    <td width="40" align="left"><img src="images/ind_60.gif" width="31" height="82" alt="" /></td>
-                    <td width="150" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="images/line.gif" class="text_26">
+                    <td width="40" align="left"><img src="/static/images/ind_60.gif" width="31" height="82" alt="" /></td>
+                    <td width="150" align="left"><table width="100%" border="0" align="center" cellpadding="0" cellspacing="0" background="/static/images/line.gif" class="text_26">
                             <tr>
                                 <td align="left"><span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=446">香港</a> <a href="ShowClass.asp?typeid=&areaid=447">澳门</a><br />
                                     <span class="dian">&middot;</span><a href="ShowClass.asp?typeid=&areaid=448">台湾</a><br />
@@ -253,7 +253,7 @@
                 <tr>
                     <td width="300" height="100" valign="top"><table width="300" border="0" cellpadding="0" cellspacing="0" class="text">
                             <tr>
-                                <td height="33" align="left" background="images/ind_71.gif"><table width="300" border="0" cellspacing="0" cellpadding="0">
+                                <td height="33" align="left" background="/static/images/ind_71.gif"><table width="300" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                             <td width="24">&nbsp;</td>
                                             <td width="276" align="left"><span class="ec14">狼友公告</span></td>
@@ -261,9 +261,9 @@
                                     </table></td>
                             </tr>
                             <tr>
-                                <td align="center" valign="top" background="images/ind_71-31.gif"><table width="280" border="0" cellpadding="0" cellspacing="0"  background="images/line.gif" class="text_26">
+                                <td align="center" valign="top" background="/static/images/ind_71-31.gif"><table width="280" border="0" cellpadding="0" cellspacing="0"  background="/static/images/line.gif" class="text_26">
                                         <tr>
-                                            <td width="14" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="14" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="266" rowspan="5" align="left"><span class="ec14">发布小姐信息获得RMB奖励</span><br />
                                                 <span class="ff6600">会员发布小姐信息经过我们审核真实会给予相应的小姐金币，当达到指定小姐金币我们会联系你奖励100RMB，如果填写的不真实将删除你的发布信息并扣除小姐金币</span></td>
                                         </tr>
@@ -280,7 +280,7 @@
                                             <td height="25">&nbsp;</td>
                                         </tr>
                                         <tr>
-                                            <td height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td rowspan="6" align="left"><span class="ec14">整理信息价格：</span><br />
                                                 说明<br />
                                                 (1).充值VIP会员，全国信息免费看。<br />
@@ -303,7 +303,7 @@
                                             <td height="25">&nbsp;</td>
                                         </tr>
                                         <tr>
-                                            <td height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td rowspan="7" align="left"><span class="ec14">希望狼友多发布一些真实信息，我们的奖品是返现RMB外加永久VIP会员账号，要求是：</span><br />
                                                 (1)不能抄袭狼友发表过的小姐信息。<br />
                                                 (2)不能大量重复小姐信息。<br />
@@ -331,7 +331,7 @@
                                     </table></td>
                             </tr>
                             <tr>
-                                <td><img src="images/ind_71-34.gif" width="300" height="5" alt="" /></td>
+                                <td><img src="/static/images/ind_71-34.gif" width="300" height="5" alt="" /></td>
                             </tr>
                         </table></td>
                     <td width="10"></td>
@@ -352,10 +352,10 @@
                                     </div></td>
                             </tr>
                             <tr>
-                                <td height="10" background="images/ind_82-37.gif"></td>
+                                <td height="10" background="/static/images/ind_82-37.gif"></td>
                             </tr>
                             <tr>
-                                <td height="435" align="center" valign="top" background="images/ind_82-37.gif">
+                                <td height="435" align="center" valign="top" background="/static/images/ind_82-37.gif">
                                     <div id="con_so_1" class="so_div">
                                         <table width="670" border="0" cellpadding="2" cellspacing="1" bgcolor="#c2c2c2" class="text">
                                             <tr class="ec14">
@@ -1716,7 +1716,7 @@
                                 </td>
                             </tr>
                             <tr>
-                                <td><img src="images/ind_82-38.gif" width="690" height="10" alt="" /></td>
+                                <td><img src="/static/images/ind_82-38.gif" width="690" height="10" alt="" /></td>
                             </tr>
                         </table></td>
                 </tr>
@@ -1738,7 +1738,7 @@
                 <tr>
                     <td width="300" height="100" valign="top"><table width="300" border="0" cellpadding="0" cellspacing="0" class="text">
                             <tr>
-                                <td height="33" align="left" background="images/ind_71.gif"><table width="300" border="0" cellspacing="0" cellpadding="0">
+                                <td height="33" align="left" background="/static/images/ind_71.gif"><table width="300" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                             <td width="24">&nbsp;</td>
                                             <td width="196" align="left"><span class="ec14">狼友热帖</span></td>
@@ -1747,10 +1747,10 @@
                                     </table></td>
                             </tr>
                             <tr>
-                                <td height="415" align="center" valign="top" background="images/ind_71-31.gif"><table width="285" border="0" cellpadding="0" cellspacing="0"  background="images/line.gif" class="text_26">
+                                <td height="415" align="center" valign="top" background="/static/images/ind_71-31.gif"><table width="285" border="0" cellpadding="0" cellspacing="0"  background="/static/images/line.gif" class="text_26">
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=5">[山东]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=65">[青岛]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=76121' target='_blank'><font color='#0066FF'>
@@ -1758,7 +1758,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=1">[北京]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=41">[通州区]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75987' target='_blank'><font color='#0066FF'>
@@ -1766,7 +1766,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=6">[河北]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=100">[秦皇岛]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75986' target='_blank'><font color='#0066FF'>
@@ -1774,7 +1774,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=1">[北京]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=35">[西城区]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75297' target='_blank'><font color='#0066FF'>
@@ -1782,7 +1782,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=5">[山东]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=68">[济宁]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75208' target='_blank'><font color='#0066FF'>
@@ -1790,7 +1790,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=2">[上海市]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=54">[徐汇]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75189' target='_blank'><font color='#0066FF'>
@@ -1798,7 +1798,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=1">[北京]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=34">[丰台]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75188' target='_blank'><font color='#0066FF'>
@@ -1806,7 +1806,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=1">[北京]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=38">[朝阳]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75187' target='_blank'><font color='#0066FF'>
@@ -1814,7 +1814,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=4">[天津]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=56">[市区]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75173' target='_blank'><font color='#0066FF'>
@@ -1822,7 +1822,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=5">[山东]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=65">[青岛]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75168' target='_blank'><font color='#0066FF'>
@@ -1830,7 +1830,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=15">[河南省]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=208">[郑州]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75151' target='_blank'><font color='#0066FF'>
@@ -1838,7 +1838,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=6">[河北]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=97">[石家庄]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75149' target='_blank'><font color='#0066FF'>
@@ -1846,7 +1846,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=1">[北京]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=41">[通州区]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75148' target='_blank'><font color='#0066FF'>
@@ -1854,7 +1854,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=3">[重庆市]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=56">[市区]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75144' target='_blank'><font color='#0066FF'>
@@ -1862,7 +1862,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=13">[浙江省]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=187">[绍兴]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75142' target='_blank'><font color='#0066FF'>
@@ -1870,7 +1870,7 @@
                                         </tr>
 
                                         <tr>
-                                            <td width="10" height="25" align="left"><img src="images/ind_86.gif" width="4" height="6" alt="" /></td>
+                                            <td width="10" height="25" align="left"><img src="/static/images/ind_86.gif" width="4" height="6" alt="" /></td>
                                             <td width="270" align="left"><a href="ShowClass.asp?areaid=17">[安徽省]</a>&nbsp;
                                                 <a class="a2" href="ShowClass.asp?areaid=245">[合肥]</a>&nbsp;
                                                 <a class="a2" href='ShowInfo.asp?id=75126' target='_blank'><font color='#0066FF'>
@@ -1880,13 +1880,13 @@
                                     </table></td>
                             </tr>
                             <tr>
-                                <td><img src="images/ind_71-34.gif" width="300" height="5" alt="" /></td>
+                                <td><img src="/static/images/ind_71-34.gif" width="300" height="5" alt="" /></td>
                             </tr>
                         </table></td>
                     <td width="10"></td>
                     <td width="690" valign="top"><table width="690" border="0" cellspacing="0" cellpadding="0">
                             <tr>
-                                <td height="33" background="images/ind_82.gif"><table width="690" border="0" cellspacing="0" cellpadding="0">
+                                <td height="33" background="/static/images/ind_82.gif"><table width="690" border="0" cellspacing="0" cellpadding="0">
                                         <tr>
                                             <td width="42">&nbsp;</td>
                                             <td width="648" align="left" class="fff14">欢迎来到&ldquo;小姐威客网&rdquo;，请详细阅读本站规则：</td>
@@ -1894,10 +1894,10 @@
                                     </table></td>
                             </tr>
                             <tr>
-                                <td height="10" background="images/ind_82-37.gif"></td>
+                                <td height="10" background="/static/images/ind_82-37.gif"></td>
                             </tr>
                             <tr>
-                                <td align="center" valign="top" background="images/ind_82-37.gif"><table width="670" border="0" cellpadding="0" cellspacing="0" class="text_26">
+                                <td align="center" valign="top" background="/static/images/ind_82-37.gif"><table width="670" border="0" cellpadding="0" cellspacing="0" class="text_26">
                                         <tr>
                                             <td width="670" align="left"><span class="ff6600">本站每条小姐信息都是确保真实可靠，经过管理员严格审核才能发布，部分信息需要小姐币才可以查看。</span><br />
                                                 小姐币的要求根据帖子内容的质量由管理员来决定。<br />
@@ -1918,7 +1918,7 @@
                                     </table></td>
                             </tr>
                             <tr>
-                                <td><img src="images/ind_82-38.gif" width="690" height="10" alt="" /></td>
+                                <td><img src="/static/images/ind_82-38.gif" width="690" height="10" alt="" /></td>
                             </tr>
                         </table></td>
                 </tr>
@@ -1941,7 +1941,7 @@
     <tr>
         <td height="10"><table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text">
                 <tr>
-                    <td height="27" background="images/ind_103.gif"><table width="1000" border="0" cellspacing="0" cellpadding="0">
+                    <td height="27" background="/static/images/ind_103.gif"><table width="1000" border="0" cellspacing="0" cellpadding="0">
                             <tr>
                                 <td width="100" align="center"><span class="ec14">友情链接</span></td>
                                 <td width="900">&nbsp;</td>
@@ -1955,7 +1955,7 @@
     <tr>
         <td height="10"><table width="1000" border="0" align="center" cellpadding="0" cellspacing="0" class="text">
                 <tr>
-                    <td height="75" background="images/ind_99.gif"><table width="980" border="0" align="center" cellpadding="0" cellspacing="0"  background="images/line.gif" class="text_26">
+                    <td height="75" background="/static/images/ind_99.gif"><table width="980" border="0" align="center" cellpadding="0" cellspacing="0"  background="/static/images/line.gif" class="text_26">
                             <tr>
                                 <td width="266" height="25" align="left">
                                 </td>
