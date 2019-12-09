@@ -34,4 +34,9 @@ public class IndexZXJController extends BaseZXJController{
         model.addAttribute("date",new Date());
         return format("hello");
     }
+
+    @GetMapping("/home")
+    public String home(Model model){
+        return format("index");
+    }
 }
