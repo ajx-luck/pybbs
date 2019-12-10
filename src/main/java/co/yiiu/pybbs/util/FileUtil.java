@@ -48,7 +48,7 @@ public class FileUtil {
       // 给上传的路径拼上文件名与后缀
       String localPath = systemConfigService.selectAllConfig().get("upload_path").toString() + "/" + customPath + "/" +
           fileName + suffix;
-
+      log.info("localPath:{}",localPath);
       // 上传文件
       // 下面 BufferedOutputStream的构造参数是直接在参数里通过 new FileOutputStream() 的方式传入的，所以它没有对象接收
       // 但下面只关闭了 stream 的流，这个FileOutputStream有没有关闭呢？
