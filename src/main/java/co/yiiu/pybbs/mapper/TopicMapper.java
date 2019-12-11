@@ -34,4 +34,8 @@ public interface TopicMapper extends BaseMapper<Topic> {
   MyPage<Map<String, Object>> selectByAidAndCid(MyPage<Map<String, Object>> iPage, @Param("aid") Integer aid, @Param("cid") Integer cid);
 
   MyPage<Map<String, Object>> selectAllTopics(MyPage<Map<String, Object>> iPage);
+
+  MyPage<Map<String, Object>> selectByCity(MyPage<Map<String, Object>> iPage,@Param("city") String city);
+
+  MyPage<Map<String, Object>> selectByProvice(MyPage<Map<String, Object>> iPage,@Param("provice") String provice);
 }

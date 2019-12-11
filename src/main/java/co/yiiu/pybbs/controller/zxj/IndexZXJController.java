@@ -1,13 +1,16 @@
 package co.yiiu.pybbs.controller.zxj;
 
+import co.yiiu.pybbs.model.Area;
 import co.yiiu.pybbs.model.MemberType;
 import co.yiiu.pybbs.model.Topic;
 import co.yiiu.pybbs.service.ITopicService;
 import co.yiiu.pybbs.service.MemberTypeService;
+import co.yiiu.pybbs.util.MyPage;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
 import org.springframework.web.bind.annotation.GetMapping;
+import org.springframework.web.bind.annotation.RequestParam;
 
 import java.util.Date;
 import java.util.List;
@@ -45,4 +48,25 @@ public class IndexZXJController extends BaseZXJController{
         return format("detail");
     }
 
+    @GetMapping("/topicCity")
+    public String showList(Model model, @RequestParam Integer pageNo,@RequestParam String city){
+        MyPage<Map<String,Object>> myPage = topicService.selectByCity(pageNo,30,city);
+        Area area = topicService.selectByName(city);
+        List<Area> citys = topicService.area(area.getProvice());
+        model.addAttribute("page", myPage);
+        model.addAttribute("city",area.getName());
+        model.addAttribute("provice",area.getProvice());
+        model.addAttribute("citys",citys);
+        return format("topiclist");
+    }
+
+    @GetMapping("/topicProvice")
+    public String showProvice(Model model, @RequestParam Integer pageNo,@RequestParam String provice){
+        MyPage<Map<String,Object>> myPage = topicService.selectByProvice(pageNo,30,provice);
+        List<Area> citys = topicService.area(provice);
+        model.addAttribute("page", myPage);
+        model.addAttribute("provice",provice);
+        model.addAttribute("citys",citys);
+        return format("topiclist");
+    }
 }

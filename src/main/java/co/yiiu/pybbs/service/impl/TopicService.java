@@ -271,4 +271,23 @@ public class TopicService implements ITopicService {
     return list;
   }
 
+
+  public MyPage<Map<String,Object>> selectByCity(Integer pageNo,Integer pageSize,String city){
+    MyPage<Map<String,Object>> page = new MyPage<>(pageNo,pageSize);
+    page = topicMapper.selectByCity(page,city);
+    return page;
+  }
+
+  public MyPage<Map<String,Object>> selectByProvice(Integer pageNo,Integer pageSize,String provice){
+    MyPage<Map<String,Object>> page = new MyPage<>(pageNo,pageSize);
+    page = topicMapper.selectByProvice(page,provice);
+    return page;
+  }
+
+  @Override
+  public Area selectByName(String name) {
+    QueryWrapper<Area> queryWrapper = new QueryWrapper<>();
+    queryWrapper.lambda().eq(Area::getName,name);
+    return areaMapper.selectOne(queryWrapper);
+  }
 }

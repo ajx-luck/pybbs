@@ -116,4 +116,15 @@
     order by t.in_time desc
   </select>
 
+  <select id="selectByCity" resultType="map">
+    select t.*
+    from topic t
+    where t.city = #{city}
+  </select>
+
+  <select id="selectByProvice" resultType="map">
+    select t.*
+    from topic t
+    where t.provice = #{provice}
+  </select>
 </mapper>

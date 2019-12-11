@@ -57,5 +57,11 @@ public interface ITopicService {
   //分页查询所有的
   MyPage<Map<String, Object>> selectAllTopics(Integer pageNo);
 
-    List<Area> area(String name);
+  List<Area> area(String name);
+
+  MyPage<Map<String, Object>> selectByCity(Integer pageNo,Integer pageSize,String city);
+
+  MyPage<Map<String, Object>> selectByProvice(Integer pageNo,Integer pageSize,String provice);
+
+  Area selectByName(String name);
 }
