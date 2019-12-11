@@ -309,6 +309,7 @@
           <td width="77" align="center" bgcolor="#FFFFCA">发布时间</td>
           <td width="80" align="center" bgcolor="#FFFFCA">浏览次数</td>
         </tr>
+        <#list page as topic>
         <tr>
           <td height="30" align="center" bgcolor="#FFFFFF" class="ff660016">${topic.category}</td>
           <td align="center" bgcolor="#FFFFFF" class="ec14">20</td>
@@ -321,7 +322,7 @@
           <td align="center" bgcolor="#FFFFFF" class="x66614">${date?string('yyyy-MM-dd')}</td>
           <td align="center" bgcolor="#FFFFFF" class="f614x">  ${visitors}</td>
         </tr>
-
+        </#list>
       </table>
       <table width="980" border="0" align="center" cellpadding="0" cellspacing="0" class="text">
         <tr>
@@ -330,7 +331,7 @@
         <tr>
           <td height="30" align="center" bgcolor="#F2F2F2"><span class="fenye">
             <a href='?&typeid=&areaid=1'>首页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=0&typeid=&areaid=1'>上页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='#'><font color=#ff0000>1</font></a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=2&typeid=&areaid=1'>2</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=3&typeid=&areaid=1'>3</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=4&typeid=&areaid=1'>4</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=5&typeid=&areaid=1'>5</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=6&typeid=&areaid=1'>6</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=7&typeid=&areaid=1'>7</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=8&typeid=&areaid=1'>8</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=9&typeid=&areaid=1'>9</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=10&typeid=&areaid=1'>10</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=11&typeid=&areaid=1'>11</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=2&typeid=&areaid=1'>下页</a>&nbsp;&nbsp;|&nbsp;&nbsp;<a href='?page=257&typeid=&areaid=1'>尾页</a>&nbsp;&nbsp;|&nbsp;&nbsp;
-&nbsp;&nbsp;（当前&nbsp;<font color='#FF0000'><b>1</b></font>&nbsp;/&nbsp;<b>257</b>&nbsp;页）</span></td>
+&nbsp;&nbsp;（当前&nbsp;<font color='#FF0000'><b>${pageNo}</b></font>&nbsp;/&nbsp;<b>${pageTotal}</b>&nbsp;页）</span></td>
         </tr>
       </table></td>
   </tr>

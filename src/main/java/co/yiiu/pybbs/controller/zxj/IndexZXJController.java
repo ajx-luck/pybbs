@@ -6,6 +6,7 @@ import co.yiiu.pybbs.model.Topic;
 import co.yiiu.pybbs.service.ITopicService;
 import co.yiiu.pybbs.service.MemberTypeService;
 import co.yiiu.pybbs.util.MyPage;
+import co.yiiu.pybbs.util.RandomUtils;
 import org.springframework.beans.factory.annotation.Autowired;
 import org.springframework.stereotype.Controller;
 import org.springframework.ui.Model;
@@ -55,10 +56,14 @@ public class IndexZXJController extends BaseZXJController{
         MyPage<Map<String,Object>> myPage = topicService.selectByCity(pageNo,30,city);
         Area area = topicService.selectByName(city);
         List<Area> citys = topicService.area(area.getProvice());
-        model.addAttribute("page", myPage);
+        model.addAttribute("page", myPage.getRecords());
         model.addAttribute("city",area.getName());
         model.addAttribute("provice",area.getProvice());
         model.addAttribute("citys",citys);
+        model.addAttribute("pageTotal",myPage.getTotal());
+        model.addAttribute("pageNo",myPage.getCurrent());
+        model.addAttribute("date",new Date());
+        model.addAttribute("visitors", RandomUtils.getRandomVisitors());
         return format("topiclist");
     }
 
@@ -66,9 +71,13 @@ public class IndexZXJController extends BaseZXJController{
     public String showProvice(Model model, @RequestParam Integer pageNo,@RequestParam String provice){
         MyPage<Map<String,Object>> myPage = topicService.selectByProvice(pageNo,30,provice);
         List<Area> citys = topicService.area(provice);
-        model.addAttribute("page", myPage);
+        model.addAttribute("page", myPage.getRecords());
         model.addAttribute("provice",provice);
         model.addAttribute("citys",citys);
+        model.addAttribute("pageTotal",myPage.getTotal());
+        model.addAttribute("pageNo",myPage.getCurrent());
+        model.addAttribute("date",new Date());
+        model.addAttribute("visitors", RandomUtils.getRandomVisitors());
         return format("topiclist");
     }
 }
