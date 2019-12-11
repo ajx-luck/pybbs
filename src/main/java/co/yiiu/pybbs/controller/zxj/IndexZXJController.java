@@ -44,7 +44,9 @@ public class IndexZXJController extends BaseZXJController{
     }
 
     @GetMapping("/detail")
-    public String detail(Model model){
+    public String detail(Model model,@RequestParam Integer topicId){
+        Topic topic = topicService.selectById(topicId);
+        model.addAttribute("topic", topic);
         return format("detail");
     }
 
