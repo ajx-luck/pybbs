@@ -21,6 +21,8 @@ public class Area implements Serializable {
 
     private String name;
 
+    private String provice;
+
     public Integer getId() {
         return id;
     }
@@ -40,5 +42,13 @@ public class Area implements Serializable {
 
     public void setName(String name) {
         this.name = name;
+    }
+
+    public String getProvice() {
+        return provice;
+    }
+
+    public void setProvice(String provice) {
+        this.provice = provice;
     }
 }

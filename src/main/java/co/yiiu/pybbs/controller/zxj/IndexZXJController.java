@@ -39,4 +39,10 @@ public class IndexZXJController extends BaseZXJController{
     public String home(Model model){
         return format("index");
     }
+
+    @GetMapping("/detail")
+    public String detail(Model model){
+        return format("detail");
+    }
+
 }

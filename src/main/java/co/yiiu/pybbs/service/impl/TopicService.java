@@ -1,6 +1,8 @@
 package co.yiiu.pybbs.service.impl;
 
+import co.yiiu.pybbs.mapper.AreaMapper;
 import co.yiiu.pybbs.mapper.TopicMapper;
+import co.yiiu.pybbs.model.Area;
 import co.yiiu.pybbs.model.Tag;
 import co.yiiu.pybbs.model.Topic;
 import co.yiiu.pybbs.model.User;
@@ -33,6 +35,8 @@ public class TopicService implements ITopicService {
 
   @Autowired
   private TopicMapper topicMapper;
+  @Autowired
+  private AreaMapper areaMapper;
   @Autowired
   private ISystemConfigService systemConfigService;
   @Autowired
@@ -257,6 +261,14 @@ public class TopicService implements ITopicService {
             .get("page_size").toString()));
     page = topicMapper.selectAllTopics(page);
     return page;
+  }
+
+  @Override
+  public List<Area> area(String name) {
+    QueryWrapper<Area> queryWrapper = new QueryWrapper<>();
+    queryWrapper.lambda().eq(Area::getProvice,name).orderByAsc(Area::getAid);
+    List<Area> list = areaMapper.selectList(queryWrapper);
+    return list;
   }
 
 }

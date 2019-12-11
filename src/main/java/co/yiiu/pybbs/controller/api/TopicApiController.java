@@ -135,4 +135,8 @@ public class TopicApiController extends BaseApiController {
     int voteCount = topicService.vote(topic, getApiUser(), session);
     return success(voteCount);
   }
+  @GetMapping("/area")
+  public Result area(@RequestParam String name){
+    return success(topicService.area(name));
+  }
 }

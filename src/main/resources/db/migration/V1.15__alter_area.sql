@@ -1,0 +1,4 @@
+ALTER TABLE `area` ADD `provice` VARCHAR(255) NULL  DEFAULT NULL  AFTER `name`;
+
+
+

@@ -1,5 +1,6 @@
 package co.yiiu.pybbs.service;
 
+import co.yiiu.pybbs.model.Area;
 import co.yiiu.pybbs.model.Topic;
 import co.yiiu.pybbs.model.User;
 import co.yiiu.pybbs.util.MyPage;
@@ -55,4 +56,6 @@ public interface ITopicService {
   int vote(Topic topic, User user, HttpSession session);
   //分页查询所有的
   MyPage<Map<String, Object>> selectAllTopics(Integer pageNo);
+
+    List<Area> area(String name);
 }
