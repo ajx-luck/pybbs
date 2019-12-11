@@ -468,31 +468,31 @@
                                         <tr>
                                             <td align="center" valign="top" background="/static/images/ind_82-37.gif"><table width="670" border="0" cellpadding="0" cellspacing="0"  background="/static/images/line2.gif" class="text_30">
                                                     <tr>
-                                                        <td width="575" height="30" align="left"><span class="ff660016">信息标题：</span><span class="ec14">服务不错，看运气，试了两次一次好一次般般</span><br />
-                                                            <span class="ff660016">信息分类：</span>洗浴中心      <br />
-                                                            <span class="ff660016">所属地区：</span><a href="ShowClass.asp?areaid=18"><font color="#FF6600">湖南省</font></a>&nbsp;-&nbsp;<a href="ShowClass.asp?areaid=263"><font color="#0066FF">长沙</font></a><br />
+                                                        <td width="575" height="30" align="left"><span class="ff660016">信息标题：</span><span class="ec14">${topic.title}</span><br />
+                                                            <span class="ff660016">信息分类：</span>${topic.category}      <br />
+                                                            <span class="ff660016">所属地区：</span><a href="ShowClass.asp?areaid=18"><font color="#FF6600">${topic.provice}</font></a>&nbsp;-&nbsp;<a href="ShowClass.asp?areaid=263"><font color="#0066FF">${topic.city}</font></a><br />
                                                             <span class="ff660016">详细地址：</span>
 
-                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">查看需扣除&nbsp;5&nbsp;小姐币 【现在开通VIP后，无需小姐币，即可免费查看全站所有信息】</font></a>
+                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">${topic.address}</font></a>
                                                             <br />
                                                             <span class="ff660016">信息来源：</span>
 
-                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">查看需扣除&nbsp;5&nbsp;小姐币 【现在开通VIP后，无需小姐币，即可免费查看全站所有信息】</font></a>
+                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">${topic.infocome}</font></a>
                                                             <br />
-                                                            <span class="ff660016">小姐数量：</span>20多个<br />
-                                                            <span class="ff660016">小姐年龄：</span>20-28<br />
-                                                            <span class="ff660016">小姐素质：</span>有好有坏<br />
-                                                            <span class="ff660016">小姐外形：</span>还可以，自己随便挑<br />
-                                                            <span class="ff660016">服务项目：</span><span class="ec14x">分等级</span><br />
-                                                            <span class="ff660016">价格一览：</span>298   398   498  <br />
-                                                            <span class="ff660016">营业时间：</span>全营业<br />
-                                                            <span class="ff660016">环境设备：</span>可以<br />
-                                                            <span class="ff660016">安全评估：</span>可以<br />
+                                                            <span class="ff660016">小姐数量：</span>${topic.missnumber}<br />
+                                                            <span class="ff660016">小姐年龄：</span>${topic.missage}<br />
+                                                            <span class="ff660016">小姐素质：</span>${topic.missquality}<br />
+                                                            <span class="ff660016">小姐外形：</span>${topic.missappearance}<br />
+                                                            <span class="ff660016">服务项目：</span><span class="ec14x">${topic.sextype}</span><br />
+                                                            <span class="ff660016">价格一览：</span>${topic.price}<br />
+                                                            <span class="ff660016">营业时间：</span>${topic.bustime}<br />
+                                                            <span class="ff660016">环境设备：</span>${topic.env}<br />
+                                                            <span class="ff660016">安全评估：</span>${topic.safety}<br />
                                                             <span class="ff660016">联系方式：</span>
-                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">查看需扣除&nbsp;5&nbsp;小姐币 【现在开通VIP后，无需小姐币，即可免费查看全站所有信息】</font></a>
+                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">${topic.contact}</font></a>
                                                             <br />
                                                             <span class="ff660016">综合评价：</span>
-                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">查看需扣除&nbsp;5&nbsp;小姐币 【现在开通VIP后，无需小姐币，即可免费查看全站所有信息】</font></a>
+                                                            <a href='User/login.asp' onClick="return alert('你没有足够权限查看此信息，请先注册会员或升级会员！');"><font color="#FF0000">${topic.evaluate}</font></a>
                                                         </td>
                                                     </tr>
                                                 </table></td>

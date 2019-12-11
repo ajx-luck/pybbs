@@ -27,7 +27,7 @@ public class IndexZXJController extends BaseZXJController{
     // 首页
     @GetMapping("/he")
     public String hello(Model model) {
-        Topic topic = topicService.selectById(2);
+        Topic topic = topicService.selectById(3);
         List<Map<String,Object>> list = topicService.selectAllTopics(1).getRecords();
         List<MemberType> memberTypes = memberTypeService.getAll();
         model.addAttribute("username","freeMarker");
